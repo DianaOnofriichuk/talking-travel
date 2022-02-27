@@ -1,0 +1,15 @@
+@media screen and (min-width: 780px) {
+  .button-header {
+    padding: 0;
+    background: transparent;
+    border: none;
+    line-height: 0;
+    cursor: pointer;
+    transition: cursor 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .button-header__icon {
+    width: 24px;
+    height: 24px;
+    fill: var(--accent-color);
+  }
+}

@@ -1,0 +1,33 @@
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+@media screen and (min-width: 450px) {
+  .container {
+    width: 450px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 780px) {
+  .container {
+    width: 780px;
+  }
+  .section {
+    padding-top: 63px;
+    padding-bottom: 63px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+  .section {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+}

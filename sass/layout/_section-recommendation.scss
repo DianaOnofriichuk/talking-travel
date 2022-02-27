@@ -1,0 +1,45 @@
+.recommendation-image {
+  display: none;
+}
+.title-recommendation{
+  text-align: left;
+}
+.subtitle-recommendation {
+  text-align: left;
+  margin-bottom: 8px;
+}
+.recommendation-text {
+  margin-bottom: 16px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.41;
+  color: #434343;
+}
+@media screen and (min-width: 780px) {
+  .recommendation-container {
+    display: flex;
+  }
+  .recommendation-image {
+    display: block;
+    width: 400px;
+    height: 300px;
+    margin-right: 30px;
+  }
+  .recommendation-contents-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .recommendation-image {
+    margin-right: 70px;
+    width: 550px;
+    height: 338px;
+  }
+  .recommendation-text {
+    margin-bottom: 24px;
+    line-height: 1.83;
+  }
+}

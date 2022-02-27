@@ -1,0 +1,294 @@
+.story-section {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.story-container {
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 280px;
+  margin: 0 auto;
+}
+.main-title-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.poster-title {
+  text-align: left;
+}
+.poster-subtitle {
+  text-align: left;
+}
+.author-link {
+  display: flex;
+  align-items: center;
+}
+.autor-image {
+  width: 35px;
+  height: 35px;
+  margin-right: 10px;
+}
+.autor-name {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.18;
+  color: #495367;
+}
+.autor-position {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.14;
+  color: #38393d;
+}
+// -----------------------poster--------------------------
+.poster-wrapper {
+  position: relative;
+}
+.poster {
+  width: 250px;
+  height: 148px;
+  margin: 20px auto 35px auto;
+}
+.poster__button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0;
+  background: transparent;
+  border: none;
+  line-height: 0;
+  cursor: pointer;
+  transition: cursor 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.story-poster-text {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  font-family: Permanent Marker;
+  font-size: 18px;
+  line-height: 92px;
+  text-align: center;
+  color: #ffffff;
+}
+.poster__icon {
+  width: 60px;
+  height: 60px;
+}
+.story-title {
+  margin-bottom: 12px;
+  font-family: Changa One;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1.12;
+  color: #434343;
+}
+.story-text {
+  margin-bottom: 35px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.62;
+  color: #434343;
+}
+// ---------------------hikes-----------------
+
+.hikes-image__list {
+  display: flex;
+  flex-direction: column;
+}
+.hikes-image__link {
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}
+.hikes-image_left {
+  margin-bottom: 15px;
+}
+.inverted-commas-icon {
+  width: 34px;
+  height: 36px;
+}
+.hikes-text-wrapper {
+  margin-top: 20px;
+}
+.hikes-story-text {
+  margin-top: 30px;
+}
+// -------------------------Hightlights------------
+.hightlights-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hightlights-item {
+  margin-bottom: 20px;
+}
+
+.hightlights-image {
+  width: 287px;
+  height: 346px;
+}
+.hightlights-text {
+  margin-top: 12px;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.57;
+  color: #828181;
+}
+// ----------------------disclaimer--------------
+.disclaimer-wrapper {
+  margin-top: 15px;
+  padding: 19px 29px;
+  background: #fafafa;
+  border-radius: 4px;
+}
+.disclaimer-title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.62;
+  color: #434343;
+}
+.disclaimer-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.62;
+  color: #434343;
+}
+@media screen and (min-width: 450px) {
+  .story-container {
+    width: 450px;
+    margin: 0 auto;
+  }
+  .poster {
+    width: 420px;
+    height: 248px;
+  }
+  //   -----------------hikes--------------------
+  .hikes-image-wrapper {
+    display: flex;
+  }
+  .hikes-image__list {
+    margin-left: 15px;
+  }
+  .hikes-image_left {
+    margin-bottom: 0;
+    width: 209px;
+    height: 460px;
+  }
+  .hikes-image_top {
+    width: 209px;
+    height: 247px;
+  }
+  .hikes-image_bottom {
+    width: 209px;
+    height: 198px;
+  }
+  .hikes-title {
+    font-family: Changa One;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 1.12;
+    letter-spacing: -0.04em;
+    color: #434343;
+  }
+}
+@media screen and (min-width: 780px) {
+  .story-section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .story-container {
+    width: 748px;
+    margin: 0 auto;
+  }
+  .autor-name {
+    font-size: 16px;
+  }
+  .autor-position {
+    font-size: 14px;
+  }
+  .poster {
+    width: 718px;
+    height: 539px;
+  }
+
+  // -----------------------poster--------------------------
+  .poster__icon {
+    width: 104px;
+    height: 105px;
+  }
+  .story-poster-text {
+    font-size: 40px;
+  }
+  //   -----------------hikes--------------------
+
+  .hikes-image_left {
+    width: 242px;
+    height: 527px;
+  }
+  .hikes-image_top {
+    width: 242px;
+    height: 287px;
+  }
+
+  .hikes-image_bottom {
+    width: 242px;
+    height: 225px;
+  }
+  // -------------------------Hightlights------------
+  .hightlights-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: -10px;
+    margin-top: -10px;
+  }
+  .hightlights-item {
+    flex-basis: calc((100% - 45px) / 3);
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .story-section {
+    padding-top: 46px;
+    padding-bottom: 46px;
+  }
+  .story-container {
+    width: 911px;
+    margin: 0 auto;
+  }
+  .hikes-story-text {
+    margin-top: 83px;
+  }
+  // -----------------------poster--------------------------
+  .poster {
+    width: 881px;
+    height: 522px;
+  }
+  .story-poster-text {
+    font-size: 55px;
+  }
+  //   -----------------hikes--------------------
+  .hikes {
+    display: flex;
+  }
+  .hikes-text-wrapper {
+    margin-left: 34px;
+    margin-top: 0;
+  }
+  .hikes-image_left {
+    width: 220px;
+    height: 479px;
+  }
+  .hikes-image_top {
+    width: 220px;
+    height: 261px;
+  }
+  .hikes-image_bottom {
+    width: 220px;
+    height: 202px;
+  }
+}

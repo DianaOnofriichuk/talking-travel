@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TalkingTravel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container container-header">
+        <a class="logo link" href="./">
+          <svg width="100px" height="64px">
+            <use href="./images/sprites.svg#icon-logo"></use>
+          </svg>
+        </a>
+        <button type="button" class="burger-button" data-menu-open>
+          <svg class="burger__icon">
+            <use href="images/sprites.svg#burger"></use>
+          </svg>
+        </button>
+        <div class="menu-wrapper">
+          <nav>
+            <ul class="navigation__list list">
+              <li class="navigation__item">
+                <a href="./" class="navigation__link link current-page">Home</a>
+              </li>
+              <li class="navigation__item">
+                <a href="./story.html" class="navigation__link link">Story</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#" class="navigation__link link">Gallery</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#" class="navigation__link link">Contact Us</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="buttons-heder-list list">
+            <li class="button__item">
+              <button type="button" class="button-header">
+                <svg class="button-header__icon">
+                  <use href="./images/sprites.svg#icon-search"></use>
+                </svg>
+              </button>
+            </li>
+            <li class="button__item">
+              <button type="button" class="button-header">
+                <svg class="button-header__icon">
+                  <use href="./images/sprites.svg#icon-user"></use>
+                </svg>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu-container">
+          <button type="button" class="botton-close" data-menu-close>
+            <svg class="icon-close">
+              <use href="images/sprites.svg#icon-close"></use>
+            </svg>
+          </button>
+          <nav>
+            <ul class="mobile-menu__list list">
+              <li class="mobile-menu__item">
+                <a class="mobile-link link mobile-current-page" href="./">
+                  Home
+                </a>
+              </li>
+              <li class="mobile-menu__item">
+                <a class="mobile-link link" href="./story.html">Story</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a class="mobile-link link" href="#">Gallery</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a class="mobile-link link" href="#">Contact Us</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="mobile-menu-buttons__list list">
+            <li class="mobile-menu-button__item">
+              <button type="button" class="mobile-menu-button">
+                <svg class="mobile-menu-button__icon">
+                  <use href="./images/sprites.svg#icon-search"></use>
+                </svg>
+              </button>
+            </li>
+            <li class="mobile-menu-button__item">
+              <button type="button" class="mobile-menu-button">
+                <svg class="mobile-menu-button__icon">
+                  <use href="./images/sprites.svg#icon-user"></use>
+                </svg>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <h1 class="main-title">
+            Let’s talk
+            <span class="main-title_black">about your next trip!</span>
+          </h1>
+          <p class="header-description">
+            Share your favorite travel destination and we will feature it in our
+            next blog!
+          </p>
+          <ul class="button-hero-list list">
+            <li class="button-hero-item">
+              <button class="button" type="button">Share your story</button>
+            </li>
+            <li class="button-hero-item">
+              <button class="button-transparent" type="button">
+                <svg class="button-transparent-icon">
+                  <use href="./images/sprites.svg#icon-button"></use>
+                </svg>
+                &nbsp Watch highlights
+              </button>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="recommendation section">
+        <div class="container recommendation-container">
+          <picture>
+            <source
+              media="(min-width: 1200px)"
+              srcset="./images/Featured.webp"
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 1200px)"
+              srcset="./images/Featured.jpg"
+            />
+            <source
+              media="(min-width: 760px)"
+              srcset="./images/Featured-tabblet.webp"
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 760px)"
+              srcset="./images/Featured-tabblet.jpg"
+            />
+            <img
+              class="recommendation-image"
+              src="./images/Featured.jpg"
+              alt="
+                    Mountains of Switzerland"
+            />
+          </picture>
+          <div class="recommendation-contents-wrapper">
+            <h2 class="title title-recommendation">Featured Destination</h2>
+            <h3 class="subtitle subtitle-recommendation">
+              Our swiss adventure blog
+            </h3>
+            <p class="recommendation-text">
+              Visiting the swiss alps? Want to know the requirements on
+              travelling to Switzerland during the pandemic? Our blog might
+              help!
+            </p>
+            <button
+              class="button-transparent button-transparent_violet"
+              type="button"
+            >
+              <svg class="button-transparent-icon">
+                <use href="./images/sprites.svg#icon-button"></use>
+              </svg>
+              &nbsp Watch Now
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="places section">
+        <div class="container">
+          <h2 class="title">Join our adventures</h2>
+          <h3 class="subtitle subtitle-places">Discover the world with us</h3>
+          <ul class="places-list list">
+            <li class="places__item">
+              <a href="#" class="places__link link">
+                <picture>
+                  <source srcset="./images/Iceland.webp" type="image/webp" />
+                  <img
+                    class="places__image"
+                    src="./images//Iceland.jpg"
+                    alt="Iceland"
+                  />
+                </picture>
+                <p class="places-mame places-mame_center">Iceland</p>
+                <p class="places-text">Discover</p>
+              </a>
+            </li>
+            <li class="places__item">
+              <a href="#" class="places__link link">
+                <picture>
+                  <source srcset="./images/Italy.webp" type="image/webp" />
+                  <img
+                    class="places__image"
+                    src="./images//Italy.jpg"
+                    alt="Italy"
+                  />
+                </picture>
+                <p class="places-mame places-mame_center">Italy</p>
+                <p class="places-text">Discover</p>
+              </a>
+            </li>
+            <li class="places__item">
+              <a href="#" class="places__link link">
+                <picture>
+                  <source srcset="./images/Dubai.webp" type="image/webp" />
+                  <img
+                    class="places__image"
+                    src="./images/Dubai.jpg"
+                    alt="Dubai"
+                  />
+                </picture>
+                <p class="places-mame places-mame_center">Dubai</p>
+                <p class="places-text">Discover</p>
+              </a>
+            </li>
+            <li class="places__item">
+              <a href="#" class="places__link link">
+                <picture>
+                  <source srcset="./images/Patagonia.webp" type="image/webp" />
+                  <img
+                    class="places__image"
+                    src="./images/Patagonia.jpg"
+                    alt="Patagonia"
+                  />
+                </picture>
+                <p class="places-mame places-mame_center">Patagonia</p>
+                <p class="places-text">Discover</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <section class="join section">
+      <div class="container">
+        <h2 class="title">Let’s build a community</h2>
+        <h3 class="subtitle">Join our next destination</h3>
+        <form class="form">
+          <h3 class="form-title">Share your travels</h3>
+          <p class="form-text">
+            Suggest a new travel destination that you want to see and we will
+            feature it in our blog.
+          </p>
+          <input
+            class="form-field"
+            type="text"
+            name="destination-name"
+            placeholder="Destination name"
+          />
+          <select class="form-field" name="country">
+            <option value="" disabled selected>Country of Destination</option>
+            <option value="Italy">Italy</option>
+            <option value="Switzerland">Switzerland</option>
+            <option value="United Arab Emirates">United Arab Emirates</option>
+            <option value="United States">United States</option>
+            <option value="Japan">Japan</option>
+            <option value="Norway">Norway</option>
+          </select>
+          <input
+            class="form-field"
+            type="text"
+            name="custumer-name"
+            placeholder="Your name"
+            required
+            minlength="2"
+          />
+          <select class="form-field" name="category">
+            <option value="" hidden>Shooting category</option>
+            <option value="travel">Travell</option>
+            <option value="work">Work</option>
+            <option value="other">Other</option>
+          </select>
+          <textarea
+            class="form-field form-textarea"
+            name="comment"
+            placeholder="Describe what kind of photos you want to focus on"
+          ></textarea>
+          <button class="button" type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+    <main>
+      <section class="recent section">
+        <div class="container">
+          <h2 class="title">catch up to our posts</h2>
+          <h3 class="subtitle">Recent story entries</h3>
+          <div class="recent-container">
+            <div class="recent-part-first">
+              <picture>
+                <source srcset="./images/Zermatt.webp" type="image/webp" />
+                <img
+                  class="recent__image"
+                  src="./images/Zermatt.jpg"
+                  alt="Zermatt"
+                />
+              </picture>
+              <div class="recent-part-first-description">
+                <div class="recent-part-first-text">
+                  <h4 class="places-mame">Zermatt, Switzerland</h4>
+                  <p class="recent__text">
+                    Marvel on the beauty of the iconic Matterhorn. Find the best
+                    places to stay that has the best views of this peak...
+                  </p>
+                </div>
+                <button class="button-transparent" type="button">
+                  <svg class="button-transparent-icon">
+                    <use href="./images/sprites.svg#icon-button"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <ul class="place-list list">
+              <li class="place__item">
+                <picture>
+                  <source srcset="./images/Tuscany.webp" type="image/webp" />
+                  <img
+                    class="recent-list-image"
+                    src="./images/Tuscany.jpg"
+                    alt="Tuscany"
+                  />
+                </picture>
+                <div class="recent-text-wrapper">
+                  <h4 class="places-mame">Tuscany, Italy</h4>
+                  <p class="recent__text">
+                    The amazing Tuscany is home to famous Renaissance art and
+                    architecture and a vast scenic landscape.
+                    <a class="recent__text-link link" href="#">
+                      view full blog...
+                    </a>
+                  </p>
+                 
+                </div>
+              </li>
+              <li class="place__item">
+                <picture>
+                  <source srcset="./images/Kyoto.webp" type="image/webp" />
+                  <img
+                    class="recent-list-image"
+                    src="./images/Kyoto.jpg"
+                    alt="Kyoto"
+                  />
+                </picture>
+                <div class="recent-text-wrapper">
+                  <h4 class="places-mame">Kyoto, Japan</h4>
+                  <p class="recent__text">
+                    Kyoto is well known for its temples, gardens, Shinto shrines
+                    and wooden houses. It’s time to visit tokyo.
+                    <a class="recent__text-link link" href="#">
+                      view full blog...
+                    </a>
+                  </p>
+              
+                </div>
+              </li>
+              <li class="place__item">
+                <picture>
+                  <source srcset="./images/Lofoten.webp" type="image/webp" />
+                  <img
+                    class="recent-list-image"
+                    src="./images/Lofoten.jpg"
+                    alt="Lofoten Islands"
+                  />
+                </picture>
+                <div class="recent-text-wrapper">
+                  <h4 class="places-mame">Lofoten Islands, Norway</h4>
+                  <p class="recent__text">
+                    Featuring razor-sharp peaks housing the arctic landscape.
+                    This astonishing island is perfect for your next postcard.
+                    <a class="recent__text-link link" href="#">
+                      view full blog...
+                    </a>
+                  </p>
+                  
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer-container">
+        <p class="footer-text">© 2022, Talking Travel. All Rights Reserved.</p>
+        <ul class="navigation__list list">
+          <li class="footer-navigation__item">
+            <a href="./" class="navigation__link-footer link">Home</a>
+          </li>
+          <li class="footer-navigation__item">
+            <a href="./story.html" class="navigation__link-footer link">
+              Story
+            </a>
+          </li>
+          <li class="footer-navigation__item">
+            <a href="#" class="navigation__link-footer link">Gallery</a>
+          </li>
+          <li class="footer-navigation__item">
+            <a href="#" class="navigation__link-footer link">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script src="./js/menu.js"></script>
+  </body>
+</html>

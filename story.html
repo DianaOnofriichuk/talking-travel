@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TalkingTravel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Permanent+Marker&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container container-header">
+        <a class="logo link" href="./">
+          <svg width="100px" height="64px">
+            <use href="./images/sprites.svg#icon-logo"></use>
+          </svg>
+        </a>
+        <button type="button" class="burger-button" data-menu-open>
+          <svg class="burger__icon">
+            <use href="images/sprites.svg#burger"></use>
+          </svg>
+        </button>
+        <div class="menu-wrapper">
+          <nav>
+            <ul class="navigation__list list">
+              <li class="navigation__item">
+                <a href="./index.html" class="navigation__link link">Home</a>
+              </li>
+              <li class="navigation__item">
+                <a href="./" class="navigation__link link current-page">
+                  Story
+                </a>
+              </li>
+              <li class="navigation__item">
+                <a href="#" class="navigation__link link">Gallery</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#" class="navigation__link link">Contact Us</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="buttons-heder-list list">
+            <li class="button__item">
+              <button type="button" class="button-header">
+                <svg class="button-header__icon">
+                  <use href="./images/sprites.svg#icon-search"></use>
+                </svg>
+              </button>
+            </li>
+            <li class="button__item">
+              <button type="button" class="button-header">
+                <svg class="button-header__icon">
+                  <use href="./images/sprites.svg#icon-user"></use>
+                </svg>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu-container">
+          <button type="button" class="botton-close" data-menu-close>
+            <svg class="icon-close">
+              <use href="images/sprites.svg#icon-close"></use>
+            </svg>
+          </button>
+          <nav>
+            <ul class="mobile-menu__list list">
+              <li class="mobile-menu__item">
+                <a class="mobile-link link" href="./index.html">
+                  Home
+                </a>
+              </li>
+              <li class="mobile-menu__item">
+                <a class="mobile-link link mobile-current-page" href="./">
+                  Story
+                </a>
+              </li>
+              <li class="mobile-menu__item">
+                <a class="mobile-link link" href="#">Gallery</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a class="mobile-link link" href="#">Contact Us</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="mobile-menu-buttons__list list">
+            <li class="mobile-menu-button__item">
+              <button type="button" class="mobile-menu-button">
+                <svg class="mobile-menu-button__icon">
+                  <use href="./images/sprites.svg#icon-search"></use>
+                </svg>
+              </button>
+            </li>
+            <li class="mobile-menu-button__item">
+              <button type="button" class="mobile-menu-button">
+                <svg class="mobile-menu-button__icon">
+                  <use href="./images/sprites.svg#icon-user"></use>
+                </svg>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="story-section">
+        <div class="story-container">
+          <div class="main-title-wrapper">
+            <div class="title-wrapper">
+              <h2 class="title poster-title">popular destinations</h2>
+              <h3 class="subtitle poster-subtitle">Hello Switzerland!</h3>
+            </div>
+            <a class="author-link link" href="#" class="author-link">
+              <img
+                class="autor-image"
+                src="./images/ellipse.jpg"
+                alt="Darrell Steward"
+              />
+              <div class="autor-text-wrapper">
+                <p class="autor-name">Darrell Steward</p>
+                <p class="autor-position">Author / Photographer</p>
+              </div>
+            </a>
+          </div>
+          <div class="poster-wrapper">
+            <picture>
+              <source
+                media="(min-width: 1200px)"
+                srcset="./images/Featured.webp 1x, ./images/Featured@2x.webp 2x"
+                type="image/webp"
+              />
+              <source
+                media="(min-width: 1200px)"
+                srcset="./images/Featured.jpg 1x, ./images/Featured@2x.jpg 2x"
+              />
+              <source
+                media="(min-width: 780px)"
+                srcset="
+                  ./images/Featured-tabblet.webp    1x,
+                  ./images/Featured-tabblet@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <source
+                media="(min-width: 780px)"
+                srcset="
+                  ./images/Featured-tabblet.jpg    1x,
+                  ./images/Featured-tabblet@2x.jpg 2x
+                "
+              />
+              <source
+                media="(min-width: 280px)"
+                srcset="./images/Featured.webp 1x, ./images/Featured@2x.webp 2x"
+                type="image/webp"
+              />
+              <source
+                media="(min-width:280px)"
+                srcset="./images/Featured.jpg 1x, ./images/Featured@2x.jpg 2x"
+              />
+              <img class="poster" src="#" alt="Matterhorn" />
+            </picture>
+            <button class="poster__button" type="button">
+              <svg class="poster__icon">
+                <use href="./images/sprites.svg#icon-play"></use>
+              </svg>
+            </button>
+            <p class="story-poster-text">The Matterhorn</p>
+          </div>
+
+          <h4 class="story-title">Our Swiss adventure story</h4>
+          <p class="story-text">
+            Location location location! Zermatt Switzerland offers majestic
+            landscapes that cannot be seen elsewhere. The Matterhorn for
+            example. This peak is a sight to behold and seeing it upclose is
+            more magical that we’ve ever imagined. ‘Want to enjoy a nice and
+            cozy swiss breakfast! Well, Zermatt will never fail you.
+          </p>
+
+          <div class="hikes">
+            <div class="hikes-image-wrapper">
+              <picture>
+                <source
+                  srcset="./images/Callout-Swiss-Winter.webp"
+                  type="image/webp"
+                />
+                <img
+                  class="hikes-image_left"
+                  src="./images/Callout-Swiss-Winter.jpg"
+                  alt="Featured"
+                />
+              </picture>
+              <ul class="hikes-image__list list">
+                <li class="hikes-image__link link">
+                  <picture>
+                    <source
+                      srcset="./images/Switzerland-Mountain.webp"
+                      type="image/webp"
+                    />
+                    <img
+                      class="hikes-image_top"
+                      src="./images/Switzerland-Mountain.jpg"
+                      alt="Switzerland Mountain"
+                    />
+                  </picture>
+                </li>
+                <li class="hikes-image__link link">
+                  <picture>
+                    <source
+                      srcset="./images/Callout-Switzerland-sunset.webp"
+                      type="image/webp"
+                    />
+                    <img
+                      class="hikes-image_bottom"
+                      src="./images/Callout-Swiss-Winter.jpg"
+                      alt="Callout Swiss Winter"
+                    />
+                  </picture>
+                </li>
+              </ul>
+            </div>
+            <div class="hikes-text-wrapper">
+              <h4 class="hikes-title">
+                <svg class="inverted-commas-icon">
+                  <use href="./images/sprites.svg#inverted-commas"></use>
+                </svg>
+                One of the best hikes we’ve done so far...
+              </h4>
+
+              <p class="story-text">
+                As one of the alpine countries, landlocked Switzerland with her
+                mountains has to compete not only with her neighbours but with
+                other destinations. There are, e.g., no coastal resorts.
+              </p>
+              <p class="story-text">
+                The advantage is that tourism in Switzerland benefits of a large
+                divers ity of beautiful landscapes in a relatively small space.
+              </p>
+              <button class="button" type="button">View full gallery</button>
+            </div>
+          </div>
+          <p class="story-text hikes-story-text">
+            The advantage is that tourism in Switzerland benefits of a large
+            diversity of beautiful landscapes in a relatively small space,
+            offering many possibilities for various activities all the year
+            round, in all seasons, although primarily in summer and winter. The
+            offers of nature as well as culture are manifold, but unfortunately
+            price levels throughout the country are high, and this can
+            discourage many people from visiting. Despite this major drawback,
+            millions of visitors from all over the world arrive(d) every year.
+          </p>
+
+          <h4 class="story-title">Hightlights</h4>
+
+          <ul class="hightlights-list list">
+            <li class="hightlights-item">
+              <picture>
+                <source srcset="./images/barns-built.webp" type="image/webp" />
+                <img
+                  class="hightlights-image"
+                  src="./images/barns-built.jpg"
+                  alt="The barns built"
+                />
+              </picture>
+              <p class="hightlights-text">
+                The barns built in the 13th and 14th century
+              </p>
+            </li>
+            <li class="hightlights-item">
+              <picture>
+                <source
+                  srcset="./images/Bernina-Express.webp"
+                  type="image/webp"
+                />
+                <img
+                  class="hightlights-image"
+                  src="./images/Bernina-Express.jpg"
+                  alt="Bernina Express"
+                />
+              </picture>
+              <p class="hightlights-text">
+                Riding the the amazing Bernina Express
+              </p>
+            </li>
+            <li class="hightlights-item">
+              <picture>
+                <source
+                  srcset="./images/Matterhorn-glacier.webp"
+                  type="image/webp"
+                />
+                <img
+                  class="hightlights-image"
+                  src="./images/Matterhorn-glacier.jpg"
+                  alt="The Matterhorn glacier"
+                />
+              </picture>
+              <p class="hightlights-text">
+                The Matterhorn glacier cable car ride
+              </p>
+            </li>
+          </ul>
+          <div class="disclaimer-wrapper">
+            <h5 class="disclaimer-title">Disclaimer</h5>
+            <p class="disclaimer-text">
+              The COVID-19 pandemic has dealt a severe blow to the tourism
+              business in Switzerland. Although it is a minor position in the
+              Swiss export balance, it is nevertheless of considerable
+              importance for those regions of the country that attract domestic
+              and foreign visitors. As a consequence of the lockdown measures,
+              combined with close borders and travel bans, tourism collapsed and
+              only briefly and partly recovered in summer. Its future is
+              uncertain and depends on people’s (future guests’) attitudes and
+              decisions as much as on the economy, political measures and, of
+              course, the progress of the pandemic.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <section class="join section">
+      <div class="container">
+        <h2 class="title">Let’s build a community</h2>
+        <h3 class="subtitle">Join our next destination</h3>
+        <form class="form">
+          <h3 class="form-title">Share your travels</h3>
+          <p class="form-text">
+            Suggest a new travel destination that you want to see and we will
+            feature it in our blog.
+          </p>
+          <input
+            class="form-field"
+            type="text"
+            name="destination-name"
+            placeholder="Destination name"
+          />
+          <select class="form-field" name="country">
+            <option value="" disabled selected>Country of Destination</option>
+            <option value="Italy">Italy</option>
+            <option value="Switzerland">Switzerland</option>
+            <option value="United Arab Emirates">United Arab Emirates</option>
+            <option value="United States">United States</option>
+            <option value="Japan">Japan</option>
+            <option value="Norway">Norway</option>
+          </select>
+          <input
+            class="form-field"
+            type="text"
+            name="custumer-name"
+            placeholder="Your name"
+            required
+            minlength="2"
+          />
+          <select class="form-field" name="category">
+            <option value="" hidden>Shooting category</option>
+            <option value="travel">Travell</option>
+            <option value="work">Work</option>
+            <option value="other">Other</option>
+          </select>
+          <textarea
+            class="form-field form-textarea"
+            name="comment"
+            placeholder="Describe what kind of photos you want to focus on"
+          ></textarea>
+          <button class="button" type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container footer-container">
+        <p class="footer-text">© 2022, Talking Travel. All Rights Reserved.</p>
+        <ul class="navigation__list list">
+          <li class="footer-navigation__item">
+            <a href="./index.html" class="navigation__link-footer link">Home</a>
+          </li>
+          <li class="footer-navigation__item">
+            <a href="./" class="navigation__link-footer link">
+              Story
+            </a>
+          </li>
+          <li class="footer-navigation__item">
+            <a href="#" class="navigation__link-footer link">Gallery</a>
+          </li>
+          <li class="footer-navigation__item">
+            <a href="#" class="navigation__link-footer link">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script src="./js/menu.js"></script>
+  </body>
+</html>
